@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Send messages through WhatsApp, without saving the contact on your phone. Just type the number and send the message. Clean, simple and easy to use."
+    />
+    <title>
+      WhatsApp Direct | Send messages without saving the WhatsApp contact
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body class="bg-gray-900">
+    <div
+      class="form-container relative sm:w-full md:w-full lg:w-96 xl:w-96 mt-32 mx-auto align-center p-5"
+    >
+      <img
+        id="country-img"
+        src=""
+        width="50px"
+        height="40px"
+        class="mx-auto my-8"
+        alt="."
+      />
+      <span class="text-gray-600 my-5">
+        Don't save any unwanted contact anymore. 🥳
+      </span>
+      <br />
+      <span class="text-gray-500 my-5 font-semibold">
+        Please DO NOT type the country code. Instead, select your country
+        bellow.
+      </span>
+      <div class="input-container flex mt-3">
+        <select
+          id="country"
+          name="country"
+          autocomplete="country-name"
+          class="px-2 bg-gray-800 py-2 text-gray-300 font-semibold block border border-l-0 border-y-0 border-r-gray-700 w-32 sm:text-sm rounded-l-md"
+        ></select>
+        <input
+          type="tel"
+          id="phone-number"
+          class="focus:ring-offset-0 bg-gray-800 py-2 text-gray-300 font-semibold block w-full pl-7 pr-12 sm:text-sm rounded-r-md"
+          placeholder="Enter the phone number"
+        />
+      </div>
+      <button
+        id="send-message-btn"
+        class="mt-4 mb-4 group relative font-bold w-full flex justify-center py-2 px-4 border border-transparent text-sm rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-900"
+      >
+        Send message
+      </button>
+    </div>
+    <div class="footer bg-gray-800 text-gray-500 text-center">
+      <p>
+        Made with ❤️ by
+        <a href="https://www.linkedin.com/in/oscar-22/" class="underline"
+          >Oscar Morales</a
+        >
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="./assets/js/index.js" type="module"></script>
+  </body>
+</html>
