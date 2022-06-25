@@ -17,6 +17,32 @@
       href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css"
     />
     <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/img/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body class="bg-gray-900">
     <div
@@ -30,11 +56,11 @@
         class="mx-auto my-8"
         alt="."
       />
-      <span class="text-gray-600 my-5">
+      <span class="text-gray-600 my-5" id="first-line">
         Don't save any unwanted contact anymore. 🥳
       </span>
       <br />
-      <span class="text-gray-500 my-5 font-semibold">
+      <span class="text-gray-500 my-5 font-semibold" id="second-line">
         Please DO NOT type the country code. Instead, select your country
         bellow.
       </span>
@@ -48,7 +74,7 @@
         <input
           type="tel"
           id="phone-number"
-          class="focus:ring-offset-0 bg-gray-800 py-2 text-gray-300 font-semibold block w-full pl-7 pr-12 sm:text-sm rounded-r-md"
+          class="focus:ring-offset-0 bg-gray-800 py-2 text-gray-300 font-semibold block w-full pl-3 pr-3 sm:text-sm rounded-r-md"
           placeholder="Enter the phone number"
         />
       </div>
