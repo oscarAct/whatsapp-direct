@@ -60,6 +60,15 @@ function fillSelect(countryCodes) {
       .toString()
       .toLowerCase();
     countryImg.src = `../assets/img/flags/4x3/${countryCode}.svg`;
+    firstLine.innerText =
+      translatedText[countryCode]?.first || defaultFirstLine;
+    secondLine.innerText =
+      translatedText[countryCode]?.second || defaultSecondLine;
+  } else {
+    const countryCode = select.selectedOptions[0].attributes["con-code"].value
+      .toString()
+      .toLowerCase();
+    countryImg.src = `../assets/img/flags/4x3/${countryCode}.svg`;
   }
 }
 
@@ -81,11 +90,8 @@ function onSendMessageButtonClick() {
     if (isnumberValid()) {
       const number = inputText.value;
       const countryCode = select.value;
-      const fullNumber = `${countryCode}${number}`;
-      window.open(
-        `https://api.whatsapp.com/send?phone=${fullNumber}`,
-        "_blank"
-      );
+      const fullNumber = `${countryCode.toString().split("+")[1]}${number}`;
+      window.location = `https://api.whatsapp.com/send?phone=${fullNumber}`;
     } else {
       if (notyf.notifications.notifications.length === 0) {
         notyf.error("You must fill out the input text before moving forward", {
